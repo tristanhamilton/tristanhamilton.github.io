@@ -1,0 +1,246 @@
+:root  {
+    --gold: #E8C990ff;
+    --sunray: #E2AB5Dff;
+    --rust: #A4480Bff;
+    --eggshell: #EEE8D0ff;
+    --ebony: #616B61ff;
+    --green: #1E2C25ff;
+    --sinopia: #D83B08ff;
+    
+}
+
+* {
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0; 
+    min-height: auto;
+    min-width: auto;
+    scroll-behavior: smooth;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+
+#nav {
+    align-items: center; 
+    justify-content: space-around; 
+    position: fixed; 
+    width: 100vw;  
+    color: black; 
+    min-width: 800px;
+    
+}
+
+.list { 
+    color: black;
+    list-style: none; 
+    background-color: var(--eggshell);
+    line-height: 2;
+    border-radius: 20px;
+    padding: 0 10px; 
+}
+
+#nav-list {
+    padding-top: 1%; 
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around; 
+    background-image: url("https://img.freepik.com/premium-photo/mixing-acrylic-paint-liquid-paint-abstract-background-beautiful-marble-background-texture-marble-liquid-stains-paint-modern-fluid-background-fluid-art-3d-illustration_129911-3016.jpg?w=2000");
+    background-position: 0% 70%; 
+    background-size: 100%; 
+    vertical-align: center; 
+    padding: 20px 8px;
+}
+
+.list:hover {
+    transform: scale(1.5);
+    box-shadow: 0px 0px 10px var(--eggshell);
+}
+
+.nav-bar-links {
+    background-color: transparent;
+    color: black; 
+    padding: 0px;
+    font-size: 1.2rem;
+    font-weight: bold; 
+}
+/* End Navigation */
+
+/* Body */
+
+.header {
+    width: 100vw; 
+    height: 100vh; 
+    background-color: var(--gold);
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 1000px;
+    min-width: 800px;
+}
+
+#header-text {
+    background-color: inherit; 
+    color: var(--green);
+    font-size: 2rem;
+    border-bottom: 1px solid var(--ebony);
+    text-shadow: 1px 1px 1px var(--sunray);
+    
+}
+
+#header-sub {
+    background-color: inherit; 
+    color: var(--sinopia);
+    font-weight: bold; 
+    font-style: italic;
+    padding-bottom: 100px;
+}
+
+.profile-bio {
+    padding-top: 78px; 
+}
+
+#profile-pic {
+    border-radius: 2rem;
+    display: block;
+    height: 300px; 
+    padding: 3px;
+    background-color: var(--sunray)
+  }
+
+#photo-desc {
+    background-color: inherit; 
+    color: var(--rust);
+    font-weight: bold; 
+    padding-top: 5px;
+}
+
+#bio {
+    background-color: var(--rust); 
+    color: var(--eggshell);
+    margin: 2vw 10vw;  
+    padding: 2vw 10vw;
+    border-radius: 20px;
+    border: 3px solid var(--sunray);
+    font-weight: bold; 
+}
+/* End Body */
+
+/* Start Footer */
+
+#footer {
+    height: 20vh;
+    background-color: var(--green);
+    width: 100vw; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+    min-width: 800px;
+    min-height: 200px; 
+}
+
+.contact-info {
+    background-color: transparent; 
+    color: var(--eggshell);
+    font-weight: bold; 
+    padding: 10px 50px; 
+    list-style: none;
+    font-size: 1.5rem; 
+}
+.contact-info-div {
+    background-color: transparent;
+}
+
+
+.contact-info-div:hover {
+    transform: scale(110%)
+}
+
+.icon {
+    background-color: transparent;
+    font-size: 2rem;
+}
+
+a {
+    padding-left: 2vw;
+    background-color: inherit;
+    text-decoration: none;
+    color: var(--eggshell)
+}
+
+/* Projects Section Style */
+
+.spacer {
+    padding:0px; 
+    height: 100px;
+    width: 100vw; 
+    background-color: var(--gold);
+    min-width: 800px;
+}
+
+.projects-div {
+    width: 100vw; 
+    background-color: var(--gold); 
+    display: grid; 
+    grid-template-columns: 40% 40%;
+    align-items: center; 
+    justify-content: center;
+    min-width: 800px;
+    min-height: 1000px;
+}
+
+.projects {
+   height: 30vw;; 
+   background-color: var(--green);
+   display: flex; 
+   justify-content: center;
+   align-items: center; 
+   border-radius: 15px;
+   min-width: 200px; 
+   min-height: 200px; 
+   max-height: 1000px; 
+   flex-direction: column;
+   padding: 10px; 
+   margin: 20px; 
+}
+
+.inner-project { 
+    margin: 0; 
+    height: 75%;  
+    width: 80%;
+    background-color: var(--ebony);  
+    border-radius: 10px;
+    padding-bottom: 10px;
+     
+    overflow: hidden;
+}
+
+.inner-project-image {
+    margin: 0; 
+    padding: 0; 
+    background-color: transparent; 
+    height: 30vw; 
+    width: auto; 
+    text-align: center;
+}
+
+.project-text, .project-link {
+    max-width: 90%;
+    background-color: transparent;
+    color: var(--eggshell);
+    font-size: 1rem;
+    padding-top: 10px; 
+    font-weight: bold; 
+    overflow: hidden;
+    text-align: center;
+}
+
+.project-text:hover, .project-link:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+/* End Projects Styling */
+
+
